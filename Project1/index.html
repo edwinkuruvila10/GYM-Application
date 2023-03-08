@@ -6,17 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HITECH FITNESS</title>
 </head>
-<link rel="stylesheet" href="css/style.css">        
-<style> 
-    /* css reset   */
+<link rel="stylesheet" href="style.css">
+<style>
+    /* <!-- css reset -- */
     body{
         margin: 0px;
         padding: 0px;
-        background: url("img/bg.jpg")  ;
+        background: url("img/dg.jpg")
+    }
+    .left{
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        border: 2px solid blue;
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid green;
+    }
+    .navbar{
+        display: inline-block;
     }
 
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        
+    }
 </style>
 <body>
-    
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            I am left
+        </div>
+        <!-- right for navbox -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- mid for button  -->
+        <div class="right">
+I am right
+        </div>
+    </header>
 </body>
 </html>
